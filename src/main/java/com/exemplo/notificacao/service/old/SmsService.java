@@ -1,11 +1,11 @@
-package com.exemplo.notificacao.service;
+package com.exemplo.notificacao.service.old;
 
 import com.exemplo.notificacao.model.Pedido;
 import org.springframework.stereotype.Service;
 
 @Service
-public class EmailService {
+public class SmsService {
     public void enviar(Pedido pedido) {
-        System.out.println("Enviando e-mail para " + pedido.getCliente());
+        System.out.println("Enviando SMS para " + pedido.getCliente());
     }
 }

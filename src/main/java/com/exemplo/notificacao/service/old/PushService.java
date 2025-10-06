@@ -1,4 +1,4 @@
-package com.exemplo.notificacao.service;
+package com.exemplo.notificacao.service.old;
 
 import com.exemplo.notificacao.model.Pedido;
 import org.springframework.stereotype.Service;

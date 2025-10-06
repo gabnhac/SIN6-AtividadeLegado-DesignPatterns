@@ -6,15 +6,15 @@ import org.springframework.stereotype.Service;
 @Service
 public class PedidoService {
 
-    private final NotificacaoService notificacaoService;
+    private final NotifierService notificacaoService;
 
-    public PedidoService(NotificacaoService notificacaoService) {
+    public PedidoService(NotifierService notificacaoService) {
         this.notificacaoService = notificacaoService;
     }
 
-    public void criarPedido(String cliente, double valor) {
+    public void criarPedido(String cliente, double valor, String message) {
         Pedido pedido = new Pedido(cliente, valor);
         System.out.println("Pedido criado para o cliente: " + cliente);
-        notificacaoService.enviarNotificacoes(pedido);
+        
     }
 }
